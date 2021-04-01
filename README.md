@@ -1,2 +1,3 @@
 # plantuml
-SImple automation around using the PlantUML Docker image
+
+Simple automation around using the PlantUML Server Docker image

@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  plantuml:
+    # Makefile fills PROJECT_NAME to current directory name.
+    container_name: ${PROJECT_NAME}
+    hostname: ${PROJECT_NAME}
+    image: ${PROJECT_NAME}
+    ports:
+          - "8900:8080"
+    build:
+      context: .
+      target: ${PROJECT_NAME}
+      dockerfile: Dockerfile
